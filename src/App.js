@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Papa from 'papaparse'
+import Mapbox from './Mapbox'
 const pathToCsv=process.env.PUBLIC_URL+'/employment-by-state.csv'
 
 const App = ()=>{
@@ -14,7 +15,10 @@ const App = ()=>{
   },[])
 
   return(
+    <>
     <h1>Hello World</h1>  
+    <Mapbox/>
+    </>
   )
 }
 
